@@ -1,0 +1,6 @@
+#11721
+
+w = input()
+for i in range(len(w)):
+  print(w[i], end='')
+  if i%10 == 9: print()
