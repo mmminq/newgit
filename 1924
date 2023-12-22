@@ -1,0 +1,14 @@
+#1924 2007년
+"""
+해당 날짜까지 일수를 모두 더한다음 %의 나머지로 요일을 구함
+"""
+month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+yoil = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT']
+day = 0
+
+m, d = map(int, input().split())
+for i in range(m-1):
+  day+=month[i]
+day+=d
+
+print(yoil[day%7])
